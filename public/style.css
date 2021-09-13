@@ -1,0 +1,104 @@
+body {
+	background-color: #86BBD8;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+	background-color: slategray;
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.cart {
+	margin: auto;
+	background-color: #758E4F;
+	/* width: 90%; */
+	padding: 1em;
+}
+
+.cart-options {
+	/* display: flex; */
+}
+
+.icon img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.add input {
+	border: 0;
+	
+	width: 30px;
+	height: 30px;
+	color: slategray;
+	border-radius: 3px;
+	margin: 10px;
+	background-color: white;
+}
+
+
+.counter {
+	/* background-color: lightgray; */
+	/* font-size: 2em; */
+	/* color: slate; */
+	width: 3em;
+	text-align: center;
+	padding: 0.5em;
+	margin-bottom: 0.25em;
+}
+
+.options {
+	display: flex;
+	width: 30%;
+}
+
+.option {
+	padding: 28px;
+}
+
+.bronze {
+	background-color: orangered;
+	margin: 20px 0px 20px 0px;
+}
+
+.orange {
+	background-color: orange;
+	margin: 20px;
+}
+
+.pink {
+	background-color: palevioletred;
+	margin: 20px 0px 20px 0px;
+}
+.option img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+.option p {
+	text-align: justify;
+	padding: 15px;
+}
+
+.option h4 {
+	font-weight: bolder;
+	color: snow;
+	text-shadow: 1px 1px 55px rgb(0 0 0 / 47%);
+
+}
+
+.option input{
+	padding: 15px;
+	border-radius: 0;
+	border: 0;
+	font-size: 17px;
+	text-align: center;
+	width: 230px;
+	margin: 10px;
+	color:slategray;
+	font-weight: bolder;
+}
