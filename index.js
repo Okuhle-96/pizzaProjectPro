@@ -1,6 +1,11 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
 
+const SettingsBill = require('./factoryFunction')
+
+
+// const pizzaPerfect = pizzaFactory();
+
 const app = express();
 const PORT =  process.env.PORT || 3017;
 
@@ -32,7 +37,7 @@ app.get('/', function(req, res) {
 
 app.get('/grandTotal', (req, res) => {
 
-    res.render('main', {
+    res.render('index', {
         smallTotal: smallTotal,
         mediumTotal: mediumTotal,
 		largeTotal: largeTotal,
