@@ -17,13 +17,23 @@
         <th>Price</th>
     </tr>
 
-    {{#each actions}}
-    <tr>
-        <td>{{size}}</td>
-         <td>{{quantity}}</td>
-          <td>{{price}}</td>
+
+    <tr class="data">
+        <td>Small</td>
+         <td>{{smallQty}}</td>
+          <td>{{small}}</td>
     </tr>
-    {{/each}}
+     <tr class="data">
+        <td>Medium</td>
+         <td>{{mediumQty}}</td>
+          <td>{{medium}}</td>
+    </tr>
+     <tr class="data">
+        <td>Large</td>
+         <td>{{largeQty}}</td>
+          <td>{{large}}</td>
+    </tr>
+ 
 
     
 </table>
@@ -46,7 +56,7 @@
         <p>Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter.</p>
 
         <form action="/large" method="POST">
-             <input type="submit" value="Order Pizza" name="small" id="">
+             <button type="submit" value="large" name="large" id="">Buy Large Pizza</button>
         </form> 
     </div>
 
@@ -57,7 +67,7 @@
         <p>Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter.</p>
 
         <form action="/medium" method="POST">
-             <input type="submit" value="Order Pizza" name="medium" id="">
+             <button type="submit" value="medium" name="medium" id="">Buy Medium Pizza</button>
         </form>
     </div>
 
@@ -68,7 +78,7 @@
         <p>Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter.</p>
 
          <form action="/small" method="POST">
-             <input type="submit" value="Order Pizza" name="large" id="">
+             <button type="submit" value="small" name="small" id="">Buy Small Pizza</button>
         </form>
     </div>
 </div>;

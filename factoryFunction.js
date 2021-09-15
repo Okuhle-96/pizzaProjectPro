@@ -2,6 +2,7 @@ module.exports = function pizzaFactory(){
     let small = 0;
     let medium = 0;
     let large = 0;
+    let total = 0;
 
     let smallQty = 0;
     let mediumQty = 0;
@@ -10,9 +11,7 @@ module.exports = function pizzaFactory(){
 
     let pizzaOrders = [];
 
-    function addPizza(size) {
-
-        let total = 0;
+    function addSmall(size) {
 
         if (size === 'small'){
             small += 31.99;
@@ -20,13 +19,21 @@ module.exports = function pizzaFactory(){
             smallQty++;
         }
 
-        else if (size === 'medium'){
+    }
+
+    function addMedium(size) {
+
+         if (size === 'medium'){
             medium += 51.99;
             total += 51.99;
             mediumQty++;
         }
+
+    }
+
+    function addLarge(size) {
         
-        else if (size === 'large'){
+         if (size === 'large'){
             large += 89.99;
             total += 89.99;
             largeQty++;
@@ -34,29 +41,50 @@ module.exports = function pizzaFactory(){
 
     }
 
-    function totals(){
-    
-        return{
-            small : small.toFixed(2),
-            medium : medium.toFixed(2),
-            large : large.toFixed(2),
-
-            smallQty : smallQty,
-            mediumQty : mediumQty,
-            largeQty : largeQty,
-            grandTotal : grandTotal().toFixed(2)
-        }
+    function getSmall(){
+        return small;
     }
 
+    function getSmallQty(){
+        return smallQty;
+    }
+
+    function getMedium(){
+        return medium;
+    }
+
+    function getMediumQty(){
+        return mediumQty;
+    }
+
+    function getLarge(){
+        return large;
+    }
+
+    function getLargeQty(){
+        return largeQty;
+    }
+
+ 
+
     function grandTotal(){
-        total = small + medium + large;
+        total =  getSmall() + getMedium() + getLarge();
         return total;
+        
     }
 
     return {
-        addPizza,
+        addSmall,
+        addMedium,
+        addLarge,
+        getSmall,
+        getSmallQty,
+        getMedium,
+        getMediumQty,
+        getLarge,
+        getLargeQty,
         grandTotal,
-        totals
+        // totals
     }
 
 }

@@ -36,7 +36,11 @@ th {
 	border: 3px solid white;
 }
 
-
+.data td {
+	font-weight: bolder;
+	font-size: 17px;
+	padding-top: 10px;
+}
 
 
 
@@ -118,7 +122,7 @@ th {
 
 }
 
-.option input{
+.option button{
 	padding: 15px;
 	border-radius: 0;
 	border: 0;
